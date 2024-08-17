@@ -1,0 +1,23 @@
+*{
+    background-color: cadetblue;
+
+}
+
+.wrapper{
+    align-items: center;
+    text-align: center;
+    border: 5px solid;
+    /* width: 50vw; */
+    
+}
+.guessField{
+    margin: 5px 5px;
+    padding: 10px 10px;
+    border: 2px solid ;
+}
+.guessSubmit{
+    margin-top: 25px;
+    
+    padding: 10px 20px;
+    border: 2px solid;
+}
