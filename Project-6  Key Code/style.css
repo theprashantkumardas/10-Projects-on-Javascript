@@ -1,0 +1,15 @@
+.heading{
+    text-align: center;
+}
+
+.tableBox{
+    text-align:left;
+    align-items: center;
+    border: 2px solid black;
+    margin: 100px auto 100px auto;
+    padding-left: 10px;
+
+}
+.desc{
+    text-align: center;
+}
