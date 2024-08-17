@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    border: 0px;
+    background-color: #000000;
+}
+.main{
+    /* background-color: blueviolet; */
+    border: 2px solid black;
+    width: 100%;
+    height: 100vh;
+    /* background-color: black; */
+}
+.appContainer{
+    /* background-color: aqua; */
+    border: 2px solid rgb(130, 130, 130);
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    height: 85%;
+    max-width:  450px;
+    align-items: center;
+    margin: 50px auto auto auto;
+    background-color: #000000;
+    /* background: linear-gradient(120deg, #a1c4fd , #c2e9fb ); */
+    /* background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%); */
+    /* background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); */
+    /* background-image: linear-gradient(175deg, #43e97b 0%, #38f9d7 100%); */
+}
+.heading{
+    display: flex;
+    text-align: center;
+    /* margin:  10px; */
+    justify-content: center;
+
+}
+.headingname{
+    margin: auto ;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    
+}
+#todoLogo{
+    
+    margin: 15px 10px 15px 15px;
+    font-size: 24px;
+    width: 24px;
+    background-color: #38f9d7;
+    border-radius: 5px;
+    /* color: orange; */
+    /* color: linear-gradient(to right, #fa709a 0%, #fee140 100%); */
+}
+.inputField{
+    display:flex;
+    text-align: center;
+    /* border: 1px solid black; */
+    background-color:#edeef0;
+    width:fit-content;
+    
+    margin:10px auto;
+    margin-bottom: 20px;
+    /* padding: 8px 20px; */
+    border-radius: 50px;
+}
+#inputBox{
+    text-align: center;
+    /* margin: 2px auto; */
+    /* border: 1px solid black; */
+    border-radius: 50px;
+    background-color: #edeef0;
+    border: none;
+    outline: none;
+    
+}
+.addBtn{
+    /* background-color: orange; */
+    background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+    color: white;
+    margin-left: 2px;
+    /* margin: 2px 2px 2px 20px; */
+    padding: 15px 25px;
+    border-radius: 50px;
+    
+}
+.task{
+    align-items: flex-start;
+    border: 2px solid white;
+    text-align: left;
+    height: 75%;
+    margin: 10px;
+    padding-left: 20px;
+    padding: 10px ;
+    line-height: 2.5;
+    border-radius: 10px;
+}
+
+ul li{
+    list-style: none;
+    position: relative;
+    padding-left: 5px;
+    user-select: none;
+    cursor: pointer;
+    align-items: flex-start;
+    margin-left: 15px;
+    padding-left: 20px;
+    /* width: 70%; */
+    margin-left: 30px;
+    
+
+
+}
+ul li{
+    /* to add white color on black background: ; */
+    color: white;
+}
+ ul li::before{
+    content: '';
+    background-image: url(images/Frame\ 5.png);
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    background-position: center;
+    top: 8px;
+    left: -20px;
+    
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(images/Frame\ 4.png);
+}
+ul li span{
+    right: 0px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    color: rgb(207, 207, 207);
+    text-align: center;
+}
+
+ul li span:hover{
+    /* background-color: #d9d9d9; */
+    background-color: #555;
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .main{
+        height: 100vh;
+        width: 100vw;
+        color: #000000;
+
+    }
+  .appContainer {
+    width: 100dvw; /* Adjust container width */
+    height: 100vh;
+    margin-top: 0px;
+    /*margin: 20px auto; /* Center the container */
+    /*height: auto; /* Allow height to adjust dynamically */
+    
+  }
+
+  .headingname {
+    font-size: 20px; /* Decrease font size */
+  }
+
+  #todoLogo {
+    margin: 15px 5px; /* Adjust margin */
+  }
+
+  .inputField {
+    /*flex-direction: column; /* Stack input field vertically */
+    align-items: center; /* Center align input field */
+    padding: 10px;
+    width: 90%; /* Adjust padding */
+    height: 56px;
+    justify-content: center;
+  }
+
+  #inputBox {
+    width: 90%; /* Adjust input width */
+    margin-bottom: 10px; /* Add spacing */
+  }
+
+  .addBtn {
+    width: 44%; /* Adjust button width */
+    margin: 5px auto; /* Center the button */
+    padding: 12px; /* Adjust padding */
+    font-size: 16px; /* Adjust font size */
+  }
+
+  .task {
+    height: auto; /* Allow height to adjust dynamically */
+    margin: 10px; /* Adjust margin */
+  }
+
+  ul li {
+    margin-left: 0; /* Reset margin */
+    padding-left: 40px; /* Adjust padding */
+  }
+
+  ul li::before {
+    left: -2px; /* Adjust position */
+  }
+
+  ul li span {
+    width: 30px; /* Adjust width */
+    height: 30px; /* Adjust height */
+    font-size: 20px; /* Adjust font size */
+  }
+}
