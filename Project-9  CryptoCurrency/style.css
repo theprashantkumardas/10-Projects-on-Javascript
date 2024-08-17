@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family:monospace; */
+    color: white;
+
+}
+.landing-page{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background.png);
+    padding: 1% 7%;
+    background-size: cover;
+    /* background-color: rgba(34, 255, 0, 0.5); */
+    /* background: linear-gradien Adjust the color and opacity as needed t(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); */
+}
+nav{
+    display: flex;
+    margin: 10px;
+    width: 100%;
+    align-items: center;
+
+}
+nav ul{
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    justify-content: space-between;
+    flex: 1;
+    margin: auto 320px;
+
+
+}
+nav ul li{
+    display:inline-block ;
+    margin: 20px 10px;
+    padding: 10px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+
+
+}
+.btn{
+    border: 1px solid black;
+    background-color: aliceblue;
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: black;
+    text-decoration: none;
+
+}
+#navbtn{
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid orange;
+}
+.logo{
+    width: 50px;
+}
+.hero-content{
+    border: 2px solid rgb(157, 59, 59);
+}
+.heading{
+    margin-top: 100px;
+    margin-bottom: 12px;
+    font-size: 56px;
+}
+.crypto{
+    color: orange;
+    padding-left: 10px;
+    font-size: 60px;
+}
+.descp{
+    padding: 10px 0px;
+    justify-content: center;
+    font-size: 20px;
+    line-height: 2;
+}
+.herobtn{
+    padding: 16px 48px;
+    border: 0px solid rgb(255, 255, 255);
+    background-color: orange;
+    border-radius: 50px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.coin-list{
+    display: flex;
+    position: absolute;
+    right: 5%;
+    bottom: 50px;
+    
+    
+}
+.coin{
+    text-align: center;
+    line-height: 1.5;
+    margin: auto 15px;
+    border: 2px solid white;
+    padding: 10px 45px;
+    border-radius: 10px;
+    /* background-color: ; */
+}
+.coin img{
+    width: 50px;
+    border: 3px solid  ;
+    border-radius: 50px;
+    
+}
+/* #coin1{
+    
+    background: linear-gradient(to right, #9a7022, #d6841f);
+    
+
+}
+#coin2{
+    background: linear-gradient(to right, #2e3885, #5770d7);
+
+}
+#coin3{
+    background: linear-gradient(to right, #d2a635, #c3a634);
+
+} */
+
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+
+}
+
