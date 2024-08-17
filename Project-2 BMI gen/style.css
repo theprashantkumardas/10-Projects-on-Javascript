@@ -1,0 +1,32 @@
+*{
+    /* margin: 0;
+    padding: 0; */
+    background-color: bisque;
+
+}
+.container{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+} 
+.container{
+    background-size: cover;
+    border: 5px solid;
+    margin: auto;
+    padding: 50px 0px;
+    border-radius: 10px;
+}
+.btn{
+    margin: 25px auto;
+    padding: 10px 30px;
+
+    border-radius: 5px;
+}
+#Height , #Weight{
+    margin-left: 20px;
+    padding: 8px 25px;
+    
+
+    border-radius: 5px;
+}
